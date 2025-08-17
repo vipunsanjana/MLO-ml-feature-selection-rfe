@@ -36,8 +36,7 @@ ml-feature-selection-rfe/
 │── data/
 │   ├── Boston.CSV                     # Boston Housing dataset
 
-│── MLO\_Feature\_Selection\_Boston\_LinearRegression.py   # Main script
-│── MLO\_Feature\_Selection\_Boston\_LinearRegression.ipynb # Jupyter Notebook (optional)
+│── MLO\_Feature\_Selection\_Boston\_LinearRegression.ipynb # Jupyter Notebook 
 │── requirements.txt                   # Dependencies
 │── README.md                          # Documentation
 
@@ -59,13 +58,7 @@ ml-feature-selection-rfe/
    pip install -r requirements.txt
    ```
 
-3. **Run the script**
-
-   ```bash
-   python MLO_Feature_Selection_Boston_LinearRegression.py
-   ```
-
-4. **(Optional) Explore the Jupyter Notebook**
+3. **Explore the Jupyter Notebook**
 
    ```bash
    jupyter notebook MLO_Feature_Selection_Boston_LinearRegression.ipynb
