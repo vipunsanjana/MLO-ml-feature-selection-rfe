@@ -1,20 +1,21 @@
-# 📊 Linear Regression Examples with scikit-learn
 
-This repository demonstrates **Linear Regression** applied to two datasets:
- 
-* 🏡 **Boston Housing Price Prediction** – predicting housing prices based on neighborhood attributes.
+# 📊 Linear Regression with Feature Selection (scikit-learn)
 
-Both projects are implemented using **Python & scikit-learn**, and evaluated with metrics such as **MSE, RMSE, and Cross-Validation scores**.
+This repository demonstrates **Linear Regression with Feature Selection** on the  
+🏡 **Boston Housing Price Prediction dataset** – predicting housing prices based on neighborhood attributes.
+
+We apply **Recursive Feature Elimination (RFE)** and  
+**Recursive Feature Elimination with Cross-Validation (RFECV)** using **scikit-learn**.
 
 ---
 
 ## 📌 Key Features
 
-- Handle categorical features using **One-Hot Encoding (dummy variables)**.  
-- Train and evaluate **Linear Regression models**.  
-- Compute model performance metrics: **MSE** and **RMSE**.  
-- Apply **Cross-Validation (CV)** for robust performance measurement.  
-- Compare model predictions on **GPA dataset** and **Boston Housing dataset**.  
+- Perform **feature selection** using RFE and RFECV  
+- Train and evaluate **Linear Regression models**  
+- Compute evaluation metrics: **MSE** and **RMSE**  
+- Apply **Cross-Validation (CV)** for robust performance measurement  
+- Compare feature subsets for optimal model accuracy  
 
 ---
 
@@ -31,14 +32,14 @@ Both projects are implemented using **Python & scikit-learn**, and evaluated wit
 
 ```
 
-ml-linear-regression-examples/
+ml-feature-selection-rfe/
 │── data/
-│   ├── Boston.CSV                   # Boston Housing dataset
-│   
+│   ├── Boston.CSV                     # Boston Housing dataset
 
-│── MLO_Feature_Selection_Boston_LinearRegression.py       # Boston housing prediction script
-│── requirements.txt                 # Dependencies
-│── README.md                        # Project documentation
+│── MLO\_Feature\_Selection\_Boston\_LinearRegression.py   # Main script
+│── MLO\_Feature\_Selection\_Boston\_LinearRegression.ipynb # Jupyter Notebook (optional)
+│── requirements.txt                   # Dependencies
+│── README.md                          # Documentation
 
 ````
 
@@ -50,38 +51,36 @@ ml-linear-regression-examples/
    ```bash
    git clone https://github.com/vipunsanjana/MLO-ml-feature-selection-rfe.git
    cd MLO-ml-feature-selection-rfe
-````
+   ````
 
-2. **Install the dependencies**
+2. **Install dependencies**
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **(Optional) Explore the Jupyter Notebook**
+3. **Run the script**
 
    ```bash
-   jupyter MLO_Feature_Selection_Boston_LinearRegression.ipynb
+   python MLO_Feature_Selection_Boston_LinearRegression.py
+   ```
+
+4. **(Optional) Explore the Jupyter Notebook**
+
+   ```bash
+   jupyter notebook MLO_Feature_Selection_Boston_LinearRegression.ipynb
    ```
 
 ---
 
 ## 📈 Example Outputs
 
-### 🎓 GPA Prediction
-
-* Model intercept & coefficients
-* Training **R² score**
-* Predictions on test data
-* **RMSE** value
-
----
-
-### 🏡 Boston Housing Prediction (with CV)
+### 🏡 Boston Housing Prediction
 
 * Fold-wise **RMSE values**
-* Average RMSE across folds
-* Selected important features (via **RFE / RFECV**)
+* Average **RMSE** across folds
+* Selected important features via **RFE / RFECV**
+* Reduced feature dataset for improved efficiency
 
 ---
 
@@ -89,7 +88,7 @@ ml-linear-regression-examples/
 
 * Add **Ridge** and **Lasso Regression** for regularization and comparison
 * Apply **feature scaling** for better performance
-* Add **visualizations** for residuals, errors, and prediction accuracy
+* Add **visualizations** (residual plots, feature importance)
 * Extend to **Polynomial Regression** for non-linear patterns
 
 ---
@@ -100,3 +99,4 @@ ml-linear-regression-examples/
 *Software Engineer | Full Stack | ML & DevOps*
 
 ---
+
