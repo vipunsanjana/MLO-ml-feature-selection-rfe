@@ -46,19 +46,19 @@ ml-linear-regression-examples/
 
 ## 🚀 How to Run
 
-1. Clone this repository:
+1. **Clone this repository**
    ```bash
    git clone https://github.com/vipunsanjana/MLO-ml-feature-selection-rfe.git
    cd MLO-ml-feature-selection-rfe
 ````
 
-2. Install the dependencies:
+2. **Install the dependencies**
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. (Optional) Explore the combined Jupyter Notebook:
+3. **(Optional) Explore the Jupyter Notebook**
 
    ```bash
    jupyter MLO_Feature_Selection_Boston_LinearRegression.ipynb
@@ -75,20 +75,22 @@ ml-linear-regression-examples/
 * Predictions on test data
 * **RMSE** value
 
+---
+
 ### 🏡 Boston Housing Prediction (with CV)
 
 * Fold-wise **RMSE values**
 * Average RMSE across folds
-* Selected important features (via feature selection methods like RFE/RFECV – optional)
+* Selected important features (via **RFE / RFECV**)
 
 ---
 
 ## ✅ Future Improvements
 
-* Add **Ridge** and **Lasso Regression** for regularization and comparison.
-* Apply **feature scaling** for better performance.
-* Add **visualizations** for residuals, errors, and prediction accuracy.
-* Extend to **Polynomial Regression** for non-linear patterns.
+* Add **Ridge** and **Lasso Regression** for regularization and comparison
+* Apply **feature scaling** for better performance
+* Add **visualizations** for residuals, errors, and prediction accuracy
+* Extend to **Polynomial Regression** for non-linear patterns
 
 ---
 
